@@ -1,0 +1,29 @@
+@import "/src/App.scss";
+a {
+    text-decoration: none;
+    
+    cursor: pointer;
+  
+    &.default {
+      text-decoration: none;
+      color: $system-colors-secondary;
+    }
+
+    &.hover {
+      color: $system-colors-primary-2;
+    }
+  
+    &.active {
+      color: $system-colors-primary;
+    }
+  
+    &.disabled {
+      color: $background-colors-graphite;
+      cursor: not-allowed;
+    }
+
+    
+  }
+
+  
+  

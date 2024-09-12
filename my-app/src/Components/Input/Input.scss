@@ -1,0 +1,63 @@
+@import "/src/App.scss";
+.input-wrapper {
+    position: relative;
+    width: 100%;
+
+    .label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    .input {
+        width: 95%;
+        height: 56px;
+        padding: 0px 0px 0px 20px;
+        border-radius: 10px;
+        border: none ;
+        font-size: 16px;
+        font-weight: 400;
+        // background-color: $background-colors-graphite;
+        // color: $contextual-colors-white;
+
+        &::placeholder{
+            // padding: 0 20px;
+            // color: $system-colors-secondary;
+        }
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+        &:focus {
+            outline: -2px;
+            outline: 2px solid $system-colors-primary;
+        }
+
+        &:disabled {
+            background-color: $system-colors-secondary;
+            cursor: not-allowed;
+            &::placeholder{
+                color: $contextual-colors-light;
+            }
+        }
+
+        &.error {
+            border-color: $contextual-colors-error;
+            &::placeholder{
+                color: $contextual-colors-light;
+            }
+        }
+    }
+
+    .errorMesage {
+        position: absolute;
+        bottom: -32px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $contextual-colors-error;
+    }
+}

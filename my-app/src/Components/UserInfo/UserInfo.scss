@@ -1,0 +1,25 @@
+@import "/src/App.scss";
+.userinfo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    color: $contextual-colors-white;
+    font-size: 16px;
+    font-weight: 600;
+
+    &__initials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 10px;
+        background-color: $system-colors-primary;
+    }
+
+    &__name{
+        width: max-content;
+    }
+}
